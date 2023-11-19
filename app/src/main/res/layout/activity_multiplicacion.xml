@@ -2,28 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/IdResta"
+    android:id="@+id/idMultiplicacion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#101010"
-    tools:context=".Resta">
-
-    <TextView
-        android:id="@+id/signoMenos"
-        android:layout_width="29dp"
-        android:layout_height="64dp"
-        android:text="-"
-        android:textColor="#F8F7F7"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+    android:background="#050505"
+    tools:context=".Multiplicacion">
 
     <Button
-        android:id="@+id/btnCalcularResta"
+        android:id="@+id/btnCalcularulti"
         android:layout_width="135dp"
         android:layout_height="112dp"
         android:onClick="calcularResultado"
@@ -37,20 +23,8 @@
         app:layout_constraintVertical_bias="0.726"
         app:strokeColor="#F30707" />
 
-    <EditText
-        android:id="@+id/resResta"
-        android:layout_width="138dp"
-        android:layout_height="63dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="145dp"
         android:layout_height="17dp"
         android:text="------------------------"
@@ -64,34 +38,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.411" />
 
-    <EditText
-        android:id="@+id/num1Resta"
-        android:layout_width="119dp"
+    <TextView
+        android:id="@+id/signoMenos3"
+        android:layout_width="29dp"
         android:layout_height="64dp"
-        android:ems="10"
-        android:inputType="number"
+        android:text="-"
+        android:textColor="#F8F7F7"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.266" />
 
     <EditText
-        android:id="@+id/num2Resta"
-        android:layout_width="119dp"
-        android:layout_height="62dp"
+        android:id="@+id/resMulti"
+        android:layout_width="138dp"
+        android:layout_height="63dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblSegundoResta"
+        android:id="@+id/signoMenos2"
+        android:layout_width="29dp"
+        android:layout_height="64dp"
+        android:text="x"
+        android:textColor="#F8F7F7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/lblSegundoMulti"
         android:layout_width="165dp"
         android:layout_height="39dp"
         android:text="SEGUNDO NUMERO"
@@ -105,8 +93,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
 
+    <EditText
+        android:id="@+id/num2Multi"
+        android:layout_width="119dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321" />
+
+    <EditText
+        android:id="@+id/num1Multi"
+        android:layout_width="119dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
     <TextView
-        android:id="@+id/lblPrimerResta"
+        android:id="@+id/lblPrimerMulti"
         android:layout_width="149dp"
         android:layout_height="39dp"
         android:text="PRIMER NUMERO"
@@ -115,16 +129,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.219" />
 
     <TextView
-        android:id="@+id/txtResta"
-        android:layout_width="168dp"
-        android:layout_height="49dp"
-        android:text="RESTA"
+        android:id="@+id/txtMultiplicacion"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:text="MULTIPLICACIÓN"
         android:textColor="#1FC6DC"
         android:textSize="32sp"
         android:textStyle="bold"

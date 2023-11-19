@@ -125,7 +125,7 @@
         app:strokeColor="#F30707" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/signoMas"
         android:layout_width="29dp"
         android:layout_height="41dp"
         android:text="+"
