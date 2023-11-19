@@ -4,52 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0B0A0A"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txtOperaciones"
-        android:layout_width="353dp"
-        android:layout_height="83dp"
-        android:text="CALCULADORA BASICA  "
-        android:textColor="#151515"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:text="SUMA"
+        android:textColor="#1FC6DC"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.596"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/lblPrimerNum"
         android:layout_width="149dp"
         android:layout_height="39dp"
         android:text="PRIMER NUMERO"
-        android:textColor="#0B0A0A"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.258" />
 
     <TextView
-        android:id="@+id/lblNum2"
-        android:layout_width="163dp"
-        android:layout_height="49dp"
-        android:textColor="#070707"
+        android:id="@+id/lblPrimerNum2"
+        android:layout_width="165dp"
+        android:layout_height="39dp"
+        android:text="SEGUNDO NUMERO"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391"
-        tools:text="SEGUNDO NUMERO" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <EditText
         android:id="@+id/numNumero1"
@@ -57,6 +58,7 @@
         android:layout_height="64dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.88"
@@ -70,6 +72,7 @@
         android:layout_height="62dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#FBFBFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.875"
@@ -83,6 +86,7 @@
         android:layout_height="63dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#FAF8F8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
@@ -95,6 +99,7 @@
         android:layout_width="145dp"
         android:layout_height="17dp"
         android:text="------------------------"
+        android:textColor="#FAF8F8"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,18 +115,21 @@
         android:layout_height="112dp"
         android:onClick="calcularResultado"
         android:text="CALCULAR"
+        app:backgroundTint="#FA1616"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.831"
+        app:strokeColor="#F30707" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="29dp"
         android:layout_height="41dp"
         android:text="+"
+        android:textColor="#F8F7F7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
