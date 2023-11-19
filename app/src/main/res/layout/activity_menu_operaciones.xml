@@ -8,37 +8,99 @@
     android:background="#090909"
     tools:context=".MenuOperaciones">
 
+    <TextView
+        android:id="@+id/lblDIVISION"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:text="DIVISION"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/lblMultiplicacion"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text="MULTIPLICACION"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <TextView
+        android:id="@+id/lblRESTA"
+        android:layout_width="74dp"
+        android:layout_height="24dp"
+        android:text="RESTA"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/lblSUMA"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:text="SUMA"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/idMulti"
         android:layout_width="142dp"
         android:layout_height="153dp"
+        android:onClick="multiplicacion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721"
+        app:layout_constraintVertical_bias="0.833"
         app:srcCompat="@mipmap/multiplicacion" />
 
     <TextView
         android:id="@+id/txtMenu"
-        android:layout_width="376dp"
-        android:layout_height="75dp"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
         android:text="OPERACIONES BASICAS"
         android:textColor="#1FC6DC"
-        android:textSize="32sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.085" />
 
     <ImageView
         android:id="@+id/idSuma"
         android:layout_width="142dp"
         android:layout_height="153dp"
+        android:clickable="false"
+        android:onClick="Suma"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
@@ -51,24 +113,26 @@
         android:id="@+id/idResta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="resta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314"
+        app:layout_constraintVertical_bias="0.296"
         app:srcCompat="@mipmap/resta" />
 
     <ImageView
         android:id="@+id/idDivi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="division"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722"
+        app:layout_constraintVertical_bias="0.829"
         app:srcCompat="@mipmap/division" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

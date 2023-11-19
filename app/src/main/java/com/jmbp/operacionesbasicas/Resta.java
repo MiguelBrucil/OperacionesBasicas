@@ -18,7 +18,7 @@ public class Resta extends AppCompatActivity {
         ednumRes2=findViewById(R.id.num2Resta);
         edResultadoRes=findViewById(R.id.resResta);
     }
-    public void calcularResultado(View v){
+    public void calcularResultadoResta(View v){
         double num1=Double.parseDouble(ednumRes1.getText().toString());
         int num2= Integer.parseInt((ednumRes2.getText().toString()));
         double resultado=num1-num2;

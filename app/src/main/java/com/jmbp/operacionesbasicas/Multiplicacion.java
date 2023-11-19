@@ -18,7 +18,7 @@ public class Multiplicacion extends AppCompatActivity {
         ednumMul2=findViewById(R.id.num2Multi);
         edResultadoMul=findViewById(R.id.resMulti);
     }
-    public void calcularResultado(View v){
+    public void calcularResultadoMulti(View v){
         double num1=Double.parseDouble(ednumMul1.getText().toString());
         int num2= Integer.parseInt((ednumMul2.getText().toString()));
         double resultado=num1*num2;

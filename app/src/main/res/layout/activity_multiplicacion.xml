@@ -12,7 +12,7 @@
         android:id="@+id/btnCalcularMulti"
         android:layout_width="135dp"
         android:layout_height="112dp"
-        android:onClick="calcularResultado"
+        android:onClick="calcularResultadoMulti"
         android:text="CALCULAR"
         app:backgroundTint="#FA1616"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,26 +38,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.411" />
 
-    <TextView
-        android:id="@+id/signoMenos3"
-        android:layout_width="29dp"
-        android:layout_height="64dp"
-        android:text="-"
-        android:textColor="#F8F7F7"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
-
     <EditText
         android:id="@+id/resMulti"
         android:layout_width="138dp"
         android:layout_height="63dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#FBF8F8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.904"
@@ -68,15 +55,15 @@
         android:id="@+id/signoMenos2"
         android:layout_width="29dp"
         android:layout_height="64dp"
-        android:text="x"
+        android:text="X"
         android:textColor="#F8F7F7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintVertical_bias="0.286" />
 
     <TextView
         android:id="@+id/lblSegundoMulti"
@@ -99,6 +86,7 @@
         android:layout_height="62dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#FBF9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.869"
@@ -112,6 +100,7 @@
         android:layout_height="64dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="#FAF8F8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.886"

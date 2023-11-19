@@ -18,7 +18,7 @@ public class Division extends AppCompatActivity {
         ednum2Divi=findViewById(R.id.num2Divi);
         edResultadoDivi=findViewById(R.id.resDivi);
     }
-    public void calcularResultado(View v){
+    public void calcularResultadoDivision(View v){
         double num1=Double.parseDouble(ednum1Divi.getText().toString());
         int num2= Integer.parseInt((ednum2Divi.getText().toString()));
         double resultado=num1/num2;
