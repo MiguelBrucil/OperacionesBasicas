@@ -9,7 +9,7 @@
     tools:context=".Multiplicacion">
 
     <Button
-        android:id="@+id/btnCalcularulti"
+        android:id="@+id/btnCalcularMulti"
         android:layout_width="135dp"
         android:layout_height="112dp"
         android:onClick="calcularResultado"
